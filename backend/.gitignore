@@ -61,3 +61,5 @@ Thumbs.db
 
 # Ignore git merge conflict files
 *.orig
+
+*.db
