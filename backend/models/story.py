@@ -23,7 +23,7 @@ class StoryNode(Base):
     content = Column(String)
     is_root = Column(Boolean, default=False)
     is_ending = Column(Boolean, default=False)
-    is_winning = Column(Boolean, default=False)
+    is_winning_ending = Column(Boolean, default=False)
     options = Column(JSON, default=list)
 
     story = relationship("Story", back_populates="nodes")
