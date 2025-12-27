@@ -107,6 +107,13 @@ The app will be available at [http://localhost:5173](http://localhost:5173) (def
 
 - **Environment Variables:**  
     Place any required variables in the `.env` file at the project root.
+- **API Base URL:**  
+    To run the frontend locally, set `API_BASE_URL` in `src/util.js` to `"/api"`.  
+    Example:
+    ```js
+    export const API_BASE_URL = "/api"
+    ```
+    This ensures API requests are correctly routed during local development.
 - **Vite Config:**  
     Modify `vite.config.js` for custom Vite settings.
 - **ESLint:**  
