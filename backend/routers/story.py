@@ -9,6 +9,7 @@ from models.job import StoryJob
 from schemas.story import (
     CompleteStoryResponse, CompleteStoryNodeResponse, CreateStoryRequest
 )
+from db.database import get_db, SessionLocal
 from schemas.job import StoryJobResponse
 
 

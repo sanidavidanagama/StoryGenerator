@@ -15,4 +15,4 @@ class StoryJob(Base):
     story_id = Column(Integer, nullable=True)
     error = Column(String, nullable=True)
     created_at = Column(DateTime(timezone=True), default=func.now())
-    completed_job = Column(DateTime(timezone=True), default=func.now())
+    completed_at = Column(DateTime(timezone=True), default=func.now())
